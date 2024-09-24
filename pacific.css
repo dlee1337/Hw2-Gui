@@ -1,0 +1,96 @@
+/*
+File: pacific.css
+David Lee, david_lee2@student.uml.edu
+Date of Creation: 09-24-24
+GUI Assignment: The purpose of this assignment was getting used CSS and making modifications without tampering with an HTML file.
+For this assignment I looked into slides as well as information that was on w3schools(selectors, shorthand assignments, padding/layouts).
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/* easier way of doing this? pulled hex code of left most side thru Krita(drawing software) */
+/* background color - background image - repeats - alignment */
+body {
+	background: #00569f url("ptrbackground.jpg") repeat-x center;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* main */
+#wrapper {
+	background-color: #8fd9fb;
+	margin: auto;
+	min-width: 600px;
+	width: 80%;
+}
+/* alignment */
+nav {
+	float: left;
+	width: 180px;
+}
+nav ul {
+	font-size: 1.2em;
+	list-style: none;
+}
+nav a {
+	color: #000032;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+/* banner */
+h1 {
+	background: #000032 url("sunset.jpg") no-repeat right;
+	color: white;
+	margin-bottom: 0;
+	padding: 15px;
+}
+h2 {
+	color: #3399CC;
+}
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+/* parameters for content on right side */
+#content {
+	background-color: white;
+	margin-left: 200px;
+	/* top, right, bottom, left */
+	padding: 10px 0 40px 25px;
+}
+/* alignment */
+#content img {
+	float: left;
+	margin-right: 30px;
+}
+/* changes bullet styling - selects div, then selects li elem , inside makes sure aligns with text */
+#content ul {
+	list-style: inside url("marker.gif");
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+/* parameters for footer */
+footer {
+	background-color: white;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	margin-left: 200px;
+	/* top, right, bottom, left */
+	padding: 0 0 20px 25px;
+
+}
+/* stylizes text */
+.resort{
+	color: #4169E1FF;
+	font-weight: bold;
+}
+
